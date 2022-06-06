@@ -4,60 +4,49 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Responsive Jquery Owl-Carousel Slider</title>
+    <title>Jquery Practics</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   
 </head>
 
-<body>
-    <div class="wrapper">
-        <div class="carousel owl-carousel">
-            <div class="card card-1">
-                HTML
-            </div>
-            <div class="card card-2">
-                CSS
-            </div>
-            <div class="card card-3">
-                Jquery
-            </div>
-            <div class="card card-4">
-                J/Script
-            </div>
-            <div class="card card-5">
-                PHP
-            </div>
-            <div class="card card-6">
-                Laravel
-            </div>
-        </div>
-    </div>
-    <script>
-        $(".carousel").owlCarousel({
-            margin: 20,
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: false
-                },
-                600: {
-                    items: 2,
-                    nav: false
-                },
-                1000: {
-                    items: 3,
-                    nav: false
-                }
-            }
+<div class="#hideDiv">This is the Div1</div>
+<div class="hideText">This is the Div2</div>
+<div>This is the Div3</div>
+<div class="hideText">This is the Div4</div>
+<div>This is the Div5</div>
+<p class="hideText"> This is the para1 </p>
+<p> This is the para2 </p>
+
+<ul>
+    <li>This is the List1</li>
+    <li>This is the List2</li>
+    <li>This is the List3</li>
+</ul>
+
+<button id="hideDiv">hide</button>
+
+<!--First Div Hide-->
+<!-- <script>
+    $(document).ready(function(){
+        $("#welcome").html("Welcome to Jquery");
+        $("#hideDiv").click(function(){
+            $('div:first').hide();
         });
-    </script>
-</body>
+    });
+</script> -->
+
+<!--First P Tag Hide-->
+<script>
+    $(document).ready(function(){
+        $("#welcome").html("Welcome to Jquery");
+        $("#hideDiv").click(function(){
+            $('ul li:child').hide();
+        });
+    });
+</script>
+
 
 </html>
